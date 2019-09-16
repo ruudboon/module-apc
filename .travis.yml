@@ -11,6 +11,7 @@ php:
 sudo: false
 
 before_install:
+  - pecl channel-update pecl.php.net
   - pecl -q install -f apcu
 
 install:
